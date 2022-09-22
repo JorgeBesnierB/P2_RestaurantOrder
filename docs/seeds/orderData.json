@@ -1,0 +1,23 @@
+[
+    {
+        "CustomerID":"1",
+        "TableID":"300",
+        "IsCooked":"0",
+        "IsDelivered":"0",
+        "Date":""
+    },
+    {
+        "CustomerID":"2",
+        "TableID":"500",
+        "IsCooked":"0",
+        "IsDelivered":"1",
+        "Date":""
+    },
+    {
+        "CustomerID":"3",
+        "TableID":"400",
+        "IsCooked":"1",
+        "IsDelivered":"0",
+        "Date":""
+    }
+]
