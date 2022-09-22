@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MENU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.css">
+    <style>
+        .navbar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+        }
+        #fullpage .section h1{
+            text-align: center;
+            color: #ffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MENU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" id="myMenu">
+                    <li class="nav-item" data-menuanchor="firstPage">
+                        <a class="nav-link" href="#firstPage">Dishes</a>
+                    </li>
+                    <li class="nav-item" data-menuanchor="secondPage">
+                        <a class="nav-link" href="#secondPage">Desserts</a>
+                    </li>
+                    <li class="nav-item" data-menuanchor="thirdPage">
+                        <a class="nav-link" href="#thirdPage">Drinks</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    <div id="fullpage">
+        <div class="section" style="background: #FF391F;"><h1>Dishes</h1></div>
+        <div class="section" style="background: #D1FA57;"><h1>Desserts</h1></div>
+        <div class="section" style="background: #FAB223;"><h1>Drinks</h1></div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.js"></script>
+    <script type="text/javascript">
+        new fullpage('#fullpage', {
+	        anchors: ['firstPage', 'secondPage', 'thirdPage'],
+	        menu: '#myMenu'
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
