@@ -3,36 +3,36 @@ CREATE DATABASE rest_db;
 
 USE rest_db;
 
-CREATE TABLE customer  (
+CREATE TABLE customers (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(45) NOT NULL,
+  custName VARCHAR(45) NOT NULL,
   email VARCHAR(45) NOT NULL,
-  password VARCHAR(45) NOT NULL,
+  custPassword VARCHAR(45) NOT NULL
 );
 
 CREATE TABLE orders (
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  customer VARCHAR(45) NOT NULL,
-  FOREIGN KEY (customer)
-  REFERENCES customer(id),
+  orderId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  customerId INT NOT NULL,
   tableId SMALLINT NOT NULL,
   isCooked BOOLEAN,
   isDelivered BOOLEAN,
-  date DATE,
+  orderDate DATE,
+  FOREIGN KEY (customerId)
+  REFERENCES customers(id)
 );
 
-CREATE TABLE menu(
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE menu (
+  dishId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   dishName VARCHAR(25) NOT NULL,
-  price DECIMAL,
+  dishPrice DECIMAL
 );
 
-CREATE TABLE orderDetails(
+CREATE TABLE orderDetails (
   orderId INT,
-  FOREIGN KEY (order)
-  REFERENCES orders(id),
   dishId INT,
+  FOREIGN KEY (orderId)
+  REFERENCES orders(orderId),
   FOREIGN KEY (dishId)
-  REFERENCES menu(id),
-)
+  REFERENCES menu(dishId)
+);
 
