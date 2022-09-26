@@ -30,6 +30,7 @@ CREATE TABLE menu (
 CREATE TABLE orderDetails (
   orderId INT,
   dishId INT,
+  quantity INT,
   FOREIGN KEY (orderId)
   REFERENCES orders(orderId),
   FOREIGN KEY (dishId)
