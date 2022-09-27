@@ -3,11 +3,11 @@ CREATE DATABASE rest_db;
 
 USE rest_db;
 
-CREATE TABLE customers (
+CREATE TABLE User (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  custName VARCHAR(45) NOT NULL,
+  name VARCHAR(45) NOT NULL,
   email VARCHAR(45) NOT NULL,
-  custPassword VARCHAR(45) NOT NULL
+  password VARCHAR(45) NOT NULL
 );
 
 CREATE TABLE orders (
