@@ -9,8 +9,6 @@ CREATE TABLE customers (
   email VARCHAR(45) NOT NULL,
   custPassword VARCHAR(45) NOT NULL
 );
-<<<<<<< HEAD
-=======
 
 CREATE TABLE orders (
   orderId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -19,14 +17,9 @@ CREATE TABLE orders (
   isCooked BOOLEAN,
   isDelivered BOOLEAN,
   orderDate DATE,
+  totalCost DECIMAL,
   FOREIGN KEY (customerId)
   REFERENCES customers(id)
-);
-
-CREATE TABLE menu (
-  dishId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  dishName VARCHAR(25) NOT NULL,
-  dishPrice DECIMAL
 );
 
 CREATE TABLE orderDetails (
@@ -39,4 +32,12 @@ CREATE TABLE orderDetails (
   REFERENCES menu(dishId)
 );
 
->>>>>>> 23d7df231324a9fb7753f178f279764598dabeb2
+CREATE TABLE menu (
+  dishId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  dishName VARCHAR(25) NOT NULL,
+  dishPrice DECIMAL,
+  dishType DECIMAL
+);
+
+
+

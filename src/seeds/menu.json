@@ -1,53 +1,124 @@
 [
     {
-        "dishId": 1,
-        "dishName":"Regular HotDog",
-        "dishPrice":"2"
+        "dishName":"Bros burger",
+        "dishDesc":"Sesame seed bun, quarter pounder and cheese.",
+        "dishPrice":"2",
+        "dishType": "1",
+        "dishImg":"ruta"
     },
     {
-        "dishId": 2,
-        "dishName":"Classic Cheeseburger",
-        "dishPrice":"3"
+        "dishName":"Bros Pineapple bacon burger",
+        "dishDesc":"Brioche bread bun, quarter pounder, pineapple slice and cheese.",
+        "dishPrice":"3",
+        "dishType": "1",
+        "dishImg":"ruta"
     },
     {
-        "dishId": 3,
-        "dishName":"Double Classic Cheeseburger",
-        "dishPrice":"5"
+        "dishName":"Bros 3 cheese burger",
+        "dishDesc":"Brioche bread bun, quarter pounder, cheddar, gouda and mozzarella.",
+        "dishPrice":"5",
+        "dishType": "1",
+        "dishImg":"ruta"
     },
     {
-        "dishId": 4,
-        "dishName":"Western Cheeseburger",
-        "dishPrice":"4"
+        "dishName":"Bros chicken burger",
+        "dishDesc":"Onion bun, fried chicken and cheese.",
+        "dishPrice":"4",
+        "dishType": "1",
+        "dishImg":"ruta"
+    },
+
+
+
+
+
+
+
+    {
+        "dishName":"French fries",
+        "dishDesc":"French fries salted and served with ketchup.",
+        "dishPrice":"6",
+        "dishType": "2",
+        "dishImg":"ruta"
     },
     {
-        "dishId": 5,
-        "dishName":"Double Western Cheeseburger",
-        "dishPrice":"6"
+        "dishName":"BBQ chicken wings",
+        "dishDesc":"Chicken wings coated with spicy and sweet barbecue sauce.",
+        "dishPrice":"4",
+        "dishType": "2",
+        "dishImg":"ruta"
     },
     {
-        "dishId": 6,
-        "dishName":"Hawaiian Cheeseburger",
-        "dishPrice":"4"
+        "dishName":"Boneless",
+        "dishDesc":"Crispy breaded pieces of tender boneless chicken tossed in your choice of sauce.",
+        "dishPrice":"6",
+        "dishType": "2",
+        "dishImg":"ruta"
     },
     {
-        "dishId": 7,
-        "dishName":"Double Hawaiian Cheeseburger",
-        "dishPrice":"6"
+        "dishName":"Onion rings",
+        "dishDesc":"Sliced white onions, battered with a subtle blend of spices.",
+        "dishPrice":"2",
+        "dishType": "2",
+        "dishImg":"ruta"
+    },
+
+
+
+
+
+
+
+
+
+    {
+        "dishName":"Ice cream",
+        "dishDesc":"7oz of vanilla ice cream covered with melted chocolate.",
+        "dishPrice":"3",
+        "dishType": "3",
+        "dishImg":"ruta"
     },
     {
-        "dishId": 8,
-        "dishName":"Fries",
-        "dishPrice":"2"
+        "dishName":"Brownies",
+        "dishDesc":"Portion of chocolate brownie (1 person).",
+        "dishPrice":"2",
+        "dishType": "3",
+        "dishImg":"ruta"
     },
     {
-        "dishId": 9,
-        "dishName":"Double Fries",
-        "dishPrice":"3"
+        "dishName":"Strawberries and cream",
+        "dishDesc":"Strawberries covered  with sweetened condensed milk, whipping cream and sour cream.",
+        "dishPrice":"2",
+        "dishType": "3",
+        "dishImg":"ruta"
+    },
+
+
+
+
+
+
+    
+    {
+        "dishName":"Vanilla Milkshake",
+        "dishDesc":"350ml",
+        "dishPrice":"2",
+        "dishType": "4",
+        "dishImg":"ruta"
     },
     {
-        "dishId": 10,
         "dishName":"Soda",
-        "dishPrice":"2"
+        "dishDesc":"350ml",
+        "dishPrice":"2",
+        "dishType": "4",
+        "dishImg":"ruta"
+    },
+    {
+        "dishName":"Water",
+        "dishDesc":"350ml",
+        "dishPrice":"2",
+        "dishType": "4",
+        "dishImg":"ruta"
     }
 
 ]
