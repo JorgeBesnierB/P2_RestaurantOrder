@@ -20,9 +20,9 @@ router.post("/sendemail",async (req, res) => {
   let info = await transporter.sendMail({
     from: '"Dianna Foo 👻" dianna.russel@ethereal.email', // sender address
     to: "dianna.russel@ethereal.email", // list of receivers
-    subject: "Hello ✔", // Subject line
-    text: "Hello world?", // plain text body
-    html: "<b>Hello world?</b>", // html body
+    subject: "Your order ✔", // Subject line
+    text: "Your order is ready", // plain text body
+    // html: "<b>Hello world?</b>", // html body
   });
 })
 
