@@ -1,11 +1,11 @@
 const sequelize = require('../config/connection');
-// const { User } = require('../models/User');
+const User = require('../models/User');
 const menu = require('../models/menu');
 // const { orderDetails } = require('../models/orderDetails');
 // const { orders } = require('../models/orders');
 
 
-const customersData = require('./customers.json');
+const UserData = require('./customers.json');
 const menuData = require('./menu.json');
 const ordersData = require('./orders.json');
 const orderDetailsData = require('./orderDetails.json');
@@ -14,10 +14,10 @@ const orderDetailsData = require('./orderDetails.json');
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  // await User.bulkCreate(User, {
-  //   individualHooks: true,
-  //   returning: true,
-  // });
+  await User.bulkCreate(UserData, {
+    individualHooks: true,
+    returning: true,
+  });
 
   // await orders.bulkCreate(orders, {
   //   individualHooks: true,

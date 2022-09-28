@@ -8,7 +8,7 @@ class Orders extends Model {
 
 Orders.init(
   {
-    orderId: {
+    id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
@@ -28,19 +28,20 @@ Orders.init(
         type: DataTypes.BOOLEAN,
         allowNull: false,
     },
-    orderDate: {
+    isDelivered: {
         type: DataTypes.DATE,
         allowNull: false,
     },
-    totalCost: {
+    orderDate: {
         type: DataTypes.INTEGER,
         allowNull: false,
     },
+    totalCost: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   },
   {
-    hooks: {
-
-    },
     sequelize,
     timestamps: false,
     freezeTableName: true,

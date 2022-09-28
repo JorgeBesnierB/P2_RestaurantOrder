@@ -2,35 +2,31 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class User extends Model {
+class orderDetails extends Model {
 
 }
 
-User.init(
+orderDetails.init(
   {
     orderId: {
         type: DataTypes.INTEGER,
     },
-    orderId: {
+    dishId: {
         type: DataTypes.INTEGER,
         foreignKey: true,
     },
-    orderId: {
+    quantity: {
         type: DataTypes.INTEGER,
         foreignKey: true,
     },
-   
   },
   {
-    hooks: {
-
-    },
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: 'orderDetails',
   }
 );
 
-module.exports = User;
+module.exports = orderDetails;
