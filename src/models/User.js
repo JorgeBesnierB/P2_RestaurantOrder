@@ -32,21 +32,13 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-<<<<<<< HEAD
         len: [8],
-=======
-        len: [6],
->>>>>>> cf603d81b1e1f4a1e107583699d3289071b1513f
       },
     },
   },
   {
     hooks: {
-<<<<<<< HEAD
       beforeCreate: async (newUserData) => {
-=======
-      async beforeCreate(newUserData) {
->>>>>>> cf603d81b1e1f4a1e107583699d3289071b1513f
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
       },
@@ -55,16 +47,8 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-<<<<<<< HEAD
     modelName: 'user',
   }
 );
 
 module.exports = User;
-=======
-    modelName: 'User',
-  }
-);
-
-module.exports = User;
->>>>>>> cf603d81b1e1f4a1e107583699d3289071b1513f
