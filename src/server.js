@@ -1,13 +1,27 @@
 const path = require('path');
 const express = require('express');
+// Import express-session
+const session = require('express-session');
 const exphbs = require('express-handlebars');
+
 const routes = require('./controllers');
-const helpers = require('./utils/helpers.js');
 const sequelize = require('./config/connection');
+const helpers = require('./utils/helpers');
+
+//extra npm package for the proyect
 const nodemailer = require('nodemailer')
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+// Set up sessions
+const sess = {
+  secret: 'Super secret secret',
+  resave: false,
+  saveUninitialized: false,
+};
+
+app.use(session(sess));
 
 // Create the Handlebars.js engine object with custom helper functions
 const hbs = exphbs.create({ helpers });
