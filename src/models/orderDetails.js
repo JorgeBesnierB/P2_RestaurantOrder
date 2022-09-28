@@ -10,14 +10,20 @@ orderDetails.init(
   {
     orderId: {
         type: DataTypes.INTEGER,
+        references: {
+          model: 'Orders',
+          key: 'id',
+        },
     },
     dishId: {
         type: DataTypes.INTEGER,
-        foreignKey: true,
+        references: {
+          model: 'menu',
+          key: 'id',
+        },
     },
     quantity: {
         type: DataTypes.INTEGER,
-        foreignKey: true,
     },
   },
   {

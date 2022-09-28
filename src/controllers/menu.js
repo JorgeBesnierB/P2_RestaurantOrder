@@ -1,15 +1,14 @@
 const router = require('express').Router();
-const menu = require('../models/menu');
+const menu = require('../models/Menu');
 
 // route to get all dishes
 router.get('/menu', async (req, res) => {
-    const menuData = await menu.findAll().catch((err) => { 
-        res.json(err);
-      });
-        const dishes = menuData.map((dish) => dish.get({ plain: true }));
-        res.render('all', { dishes });
-        console.log(dishes);
-      });
+  // Get all books from the book table
+  menu.findAll().then((menuData) => {
+    res.json(menuData);
+  });
+});
   
 
 module.exports = router;
+

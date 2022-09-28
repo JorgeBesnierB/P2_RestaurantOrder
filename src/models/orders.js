@@ -17,8 +17,10 @@ Orders.init(
     customerId: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        foreignKey: true,
-        autoIncrement: true,
+        references: {
+          model: 'user',
+          key: 'id',
+        },
     },
     tableId: {
         type: DataTypes.INTEGER,
@@ -40,6 +42,8 @@ Orders.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    //store a reference
+
   },
   {
     sequelize,
