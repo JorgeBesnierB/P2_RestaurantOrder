@@ -1,0 +1,124 @@
+[
+    {
+        "dishName":"Bros burger",
+        "dishDesc":"Sesame seed bun, quarter pounder and cheese.",
+        "dishPrice":"2",
+        "dishType": "1",
+        "dishImg":"./img/BrosBurger.png"
+    },
+    {
+        "dishName":"Bros Pineapple bacon burger",
+        "dishDesc":"Brioche bread bun, quarter pounder, pineapple slice and cheese.",
+        "dishPrice":"3",
+        "dishType": "1",
+        "dishImg":"./img/BrosPineappleBaconBurger.png"
+    },
+    {
+        "dishName":"Bros 3 cheese burger",
+        "dishDesc":"Brioche bread bun, quarter pounder, cheddar, gouda and mozzarella.",
+        "dishPrice":"5",
+        "dishType": "1",
+        "dishImg":"./img/BrosCheeseBurger.png"
+    },
+    {
+        "dishName":"Bros chicken burger",
+        "dishDesc":"Onion bun, fried chicken and cheese.",
+        "dishPrice":"4",
+        "dishType": "1",
+        "dishImg":"./img/BrosChickenBurger.png"
+    },
+
+
+
+
+
+
+
+    {
+        "dishName":"French fries",
+        "dishDesc":"French fries salted and served with ketchup.",
+        "dishPrice":"6",
+        "dishType": "2",
+        "dishImg":"./img/FrenchFries.png"
+    },
+    {
+        "dishName":"BBQ chicken wings",
+        "dishDesc":"Chicken wings coated with spicy and sweet barbecue sauce.",
+        "dishPrice":"4",
+        "dishType": "2",
+        "dishImg":"./img/BBQChickenWings.png"
+    },
+    {
+        "dishName":"Boneless",
+        "dishDesc":"Crispy breaded pieces of tender boneless chicken tossed in your choice of sauce.",
+        "dishPrice":"6",
+        "dishType": "2",
+        "dishImg":"./img/Boneless.png"
+    },
+    {
+        "dishName":"Onion rings",
+        "dishDesc":"Sliced white onions, battered with a subtle blend of spices.",
+        "dishPrice":"2",
+        "dishType": "2",
+        "dishImg":"./img/Boneless.png"
+    },
+
+
+
+
+
+
+
+
+
+    {
+        "dishName":"Ice cream",
+        "dishDesc":"7oz of vanilla ice cream covered with melted chocolate.",
+        "dishPrice":"3",
+        "dishType": "3",
+        "dishImg":"./img/IceCream.png"
+    },
+    {
+        "dishName":"Brownies",
+        "dishDesc":"Portion of chocolate brownie (1 person).",
+        "dishPrice":"2",
+        "dishType": "3",
+        "dishImg":"./img/Brownie.png"
+    },
+    {
+        "dishName":"Strawberries and cream",
+        "dishDesc":"Strawberries covered  with sweetened condensed milk, whipping cream and sour cream.",
+        "dishPrice":"2",
+        "dishType": "3",
+        "dishImg":"./img/Strawberries.png"
+    },
+
+
+
+
+
+
+    
+    {
+        "dishName":"Vanilla Milkshake",
+        "dishDesc":"350ml",
+        "dishPrice":"2",
+        "dishType": "4",
+        "dishImg":"./img/Milkshake.png"
+    },
+    {
+        "dishName":"Soda",
+        "dishDesc":"350ml",
+        "dishPrice":"2",
+        "dishType": "4",
+        "dishImg":"./img/Sodas.png"
+    },
+    {
+        "dishName":"Water",
+        "dishDesc":"350ml",
+        "dishPrice":"2",
+        "dishType": "4",
+        "dishImg":"./img/Water.png"
+    }
+
+]

@@ -1,0 +1,14 @@
+{{> navbar}}
+
+<div id="fullpage">
+    <div class="section" style="background: #F21D44">
+      <h1 class="title">Dishes</h1>
+      <div>
+        <div class="d-flex justify-content-center flex-wrap"> 
+          {{#each plainMenuData}}
+              {{> product-card}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+</div>
