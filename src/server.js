@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 // Import express-session
 const session = require('express-session');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const exphbs = require('express-handlebars');
 
 const routes = require('./controllers');
@@ -14,11 +15,18 @@ const nodemailer = require('nodemailer')
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Set up sessions
+// Set up sessions with cookies
 const sess = {
   secret: 'Super secret secret',
+  cookie: {
+    // Stored in milliseconds (86400 === 1 day)
+    maxAge: 86400,
+  },
   resave: false,
-  saveUninitialized: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
 };
 
 app.use(session(sess));
