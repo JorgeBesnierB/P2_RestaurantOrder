@@ -31,12 +31,12 @@ Orders.init(
         allowNull: false,
     },
     isDelivered: {
-        type: DataTypes.DATE,
+        type: DataTypes.BOOLEAN,
         allowNull: false,
     },
     orderDate: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
     },
     totalCost: {
       type: DataTypes.INTEGER,

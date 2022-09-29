@@ -13,10 +13,10 @@ CREATE TABLE User (
 CREATE TABLE orders (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   customerId INT NOT NULL,
-  tableId SMALLINT NOT NULL,
+  tableId INT NOT NULL,
   isCooked BOOLEAN,
   isDelivered BOOLEAN,
-  orderDate DATE,
+  orderDate DECIMAL,
   totalCost DECIMAL,
   FOREIGN KEY (customerId)
   REFERENCES customers(id)
