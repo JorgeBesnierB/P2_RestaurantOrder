@@ -8,9 +8,9 @@ router.get('/menu', async (req, res) => {
     // res.json(menuData);
     const plainMenuData = menuData.map((data) => data.get({plain:true}))
     //console.log(plainMenuData);
-
+    res.render('menu', {layout: 'menu-layout', plainMenuData});
   });
-  res.render('menu', {layout: 'menu-layout', plainMenuData});
+  
 });
   
 
