@@ -5,8 +5,12 @@ const menu = require('../models/Menu');
 router.get('/menu', async (req, res) => {
   // Get all books from the book table
   menu.findAll().then((menuData) => {
-    res.json(menuData);
+    // res.json(menuData);
+    const plainMenuData = menuData.map((data) => data.get({plain:true}))
+    //console.log(plainMenuData);
+
   });
+  res.render('menu', {layout: 'menu-layout', plainMenuData});
 });
   
 
