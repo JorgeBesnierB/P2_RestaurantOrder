@@ -28,7 +28,7 @@ menu.init(
         type: DataTypes.INTEGER,
         allowNull: false,    
     },
-    dishName: {
+    dishImg: {
       type: DataTypes.STRING,
       allowNull: false,
     }

@@ -1,14 +1,15 @@
-<div class="card" style="width: 18rem">
-            <img src="./Images/Bros Burger.png" class="card-img-top" alt="..." />
+      <div class="card shadow m-3 p-0" style="width: 21rem;">
+
+            <img src={{dishImg}} class="card-img-top text-center" alt="..." />
             <div class="card-body">
-              <h2 class="card-title">Jeje</h2>
-              <p class="card-text">
-                Sesame seed bun, quarter pounder and cheese.
+              <h2 class="card-title text-center">{{dishName}}</h2>
+              <p class="card-text text-center">
+                {{dishDesc}}
               </p>
             </div>
-            <div class="form">
+            <div class="form text-center">
               <label for="floatingEmptyPlaintextInput">
-                <h3>$</h3>
+                <h3>${{dishPrice}}</h3>
               </label>
             </div>
             <div class="container text-center">
@@ -33,6 +34,7 @@
                 </svg>
               </button>
             </div>
-            <div class="card-body">
+            <div class="card-body container text-center">
               <button type="button" class="btn btn-success">Add to cart</button>
             </div>
+</div>

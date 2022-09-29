@@ -7,10 +7,10 @@ router.get('/menu', async (req, res) => {
   menu.findAll().then((menuData) => {
     // res.json(menuData);
     const plainMenuData = menuData.map((data) => data.get({plain:true}))
-    //console.log(plainMenuData);
+    // console.log(plainMenuData);
+    res.render('menu', {layout: 'menu-layout', plainMenuData});
 
   });
-  res.render('menu', {layout: 'menu-layout', plainMenuData});
 });
   
 
