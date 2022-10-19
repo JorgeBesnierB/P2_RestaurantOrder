@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+    "devStart": "nodemon server.js",
     "seed": "node seeds/seed.js"
   },
   "keywords": [],
@@ -23,5 +24,8 @@
     "nodemailer": "^6.7.8",
     "sequelize": "^6.3.5",
     "session": "^0.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
