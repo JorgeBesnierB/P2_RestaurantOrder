@@ -1,0 +1,26 @@
+[
+    {
+        "orderId": 1,
+        "customerId":"1",
+        "tableId":"3",
+        "isCooked":"0",
+        "isDelivered":"0",
+        "orderDate":""
+    },
+    {
+        "orderId": 2,
+        "customerId":"2",
+        "tableId":"5",
+        "isCooked":"0",
+        "isDelivered":"1",
+        "orderDate":""
+    },
+    {
+        "orderId": 3,
+        "customerId":"3",
+        "tableId":"4",
+        "isCooked":"1",
+        "isDelivered":"0",
+        "orderDate":""
+    }
+]
