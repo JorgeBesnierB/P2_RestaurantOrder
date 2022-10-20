@@ -1,0 +1,37 @@
+<!-- Nav Bar va dentro de menu.hbs-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MENU</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" id="myMenu">
+        {{!-- AGREGAR Link Ruta Dishes --}}
+        <li class="nav-item" data-menuanchor="firstPage">
+          <a class="nav-link" href="#firstPage">DISHES</a>
+        </li>
+        {{!-- AGREGAR Link Ruta Snacks --}}
+        <li class="nav-item" data-menuanchor="secondPage">
+          <a class="nav-link" href="#secondPage">SNACKS</a>
+        </li>
+        {{!-- AGREGAR Link Ruta Desserts --}}
+        <li class="nav-item" data-menuanchor="thirdPage">
+          <a class="nav-link" href="#thirdPage">DESSERTS</a>
+        </li>
+        {{!-- AGREGAR Link Ruta Drinks --}}
+        <li class="nav-item" data-menuanchor="fourthPage">
+          <a class="nav-link" href="#fourthPage">DRINKS</a>
+        </li>
+      </ul>
+
+      {{!-- Boton para Modal Carrito --}}
+      <button type="button" class="btn btn-dark show" data-id="seeCart-{{id}}" onclick="seeCart();">
+        <a href="/cart"></a>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+
+    </div>
+  </div>
+</nav>
