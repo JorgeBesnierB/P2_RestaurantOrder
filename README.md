@@ -1,65 +1,66 @@
-# Project Two -  Interactive Full-Stack Application
+# P2_RestaurantOrder
 
-## Project Description
+# `PROJECT II` - Interactive Full-Stack Application
 
-For this project we want to put all topics that were provided in our Bootcamp to practice by getting together as a team of soon to be developers. 
+> ## Project Description
+
+For this project we want to put all topics that were provided in our Bootcamp to practice by getting together as a team of soon to be developers.
 The user story is to be determine and chose on our own to meet the requirements.
 
-## Challenges
+> ## Challenges
 
 The challenge for the project to deliver is meeting the requirement and meet the user expectation.
 
-## Project Requirements
+> ## Project Requirements
 
-Requirements adhere to a format that's commonly used by software development teams that use **agile project management** to manage their work. 
+Requirements adhere to a format that's commonly used by software development teams that use **agile project management** to manage their work.
 The requirement must meet the following elements:
 
-* **Use Node.js and Express.js to create a RESTful API.** 
+- **Use `Node.js` and `Express.js` to create a RESTful API.**
 
-* **Use Handlebars.js as the templating engine.** 
+- **Use `Handlebars.js` as the templating engine.**
 
-* **Use MySQL and the Sequelize ORM for the database.**
+- **Use `MySQL` and the `Sequelize ORM` for the database.**
 
-* **Have both GET and POST routes for retrieving and adding new data.**
+- **Have both `GET` and `POST` routes for retrieving and adding new data.**
 
-* **Be deployed using Heroku (with data).**
+- **Be deployed using `Heroku`(with data).**
 
-* **Use at least one new library, package, or technology that we haven’t discussed.**
+- **Use at least one new library, package, or technology that we haven’t discussed.**
 
-* **Have a polished UI.**
+- **Have a polished UI.**
 
-* **Be responsive.**
+- **Be responsive.**
 
-* **Be interactive (i.e., accept and respond to user input).**
+- **Be interactive (i.e., accept and respond to user input).**
 
-* **Have a folder structure that meets the MVC paradigm.**
+- **Have a folder structure that meets the `MVC paradigm`.**
 
-* **Include authentication (express-session and cookies).**
+- **Include `authentication` (express-session and cookies).**
 
-* **Protect API keys and sensitive information with environment variables.**
+- **Protect `API keys` and sensitive information with environment variables.**
 
-* **Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class/id naming conventions, indentation, quality comments, and so on)**
+- **Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class/id naming conventions, indentation, quality comments, and so on)**
 
-* **Have a quality README (including a unique name, description, technologies used, screenshot, and link to the deployed application).**
+- **Have a quality `README` (including a unique name, description, technologies used, screenshot, and link to the deployed application).**
 
-## Webpage Name
+> ## Webpage Name
 
 Burger Bros
 
-## Wedpage Description
+> ## Wedpage Description
 
 Burger Bros is a restaurant that wants to have their own web application so their clients can order online and also have more publicity to have more customers!
 
-## User Story
+## `User Story`
 
 ```
-AAs a user
-I WANT to search for subrmit my order thorugh the web application, 
+As a user
+I WANT to search for subrmit my order thorugh the web application,
 SO THAT I can get my order delivered
-
 ```
 
-## Acceptance Criteria
+## `Acceptance Criteria`
 
 ```
 GIVEN a webpage meets accessibility standards
@@ -75,45 +76,46 @@ WHEN I register
 THEN I am able to submit my order
 ```
 
-## Technologies Used
+> ## Technologies Used
 
-The webpage was able to be complete with help of the following technologies: 
+The webpage was able to be complete with help of the following technologies:
 
-* **JavaScript** 
+- **JavaScript**
 
-* **CSS** 
+- **CSS**
 
-* **Boostrap** 
+- **Boostrap**
 
-* **SQL** 
+- **SQL**
 
-* **Node** 
+- **Node**
 
-* **Node Mailer** 
+- **Node Mailer**
 
-* **Express** 
+- **Express**
 
-* **Imsomnia** 
+- **Imsomnia**
 
-* **Heroku** 
+- **Heroku**
 
-* **VS Code** 
+- **VS Code**
 
-* **GitHub** 
+- **GitHub**
 
-* **Git Bash** 
+- **Git Bash**
 
-* **Canva** 
-
-
-## Review
-
-You are can follow the link for review and test:
-
-* Burger Bros.
-![ezgif com-gif-maker](https://.gif)
-
+- **Canva**
 
 ---
-Project 2; Team 2
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+> ### LINK : [CLICK Here to see the Website Result !](https://bladeo8x.github.io/01-CHALLENGE/)
+
+---
+
+<p align= 'center' style="font-size:25px">Burger Bros</p>
+
+---
+
+<p align= 'center' style="font-size:25px">
+    THANK YOU FOR YOUR TIME!
+</p>
